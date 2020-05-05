@@ -1,0 +1,268 @@
+/* Variables*/
+$color-rosa:rgb(180, 29, 82);
+$font-family1:'Roboto', sans-serif;
+$font-family2:'Baloo Thambi 2', cursive;
+
+/*elementos de la grilla utilizando MIXIN*/
+@mixin grilla($grid-template-columns,$grid-template-rows,$grid-row-gap) {
+   display:grid;
+   grid-template-columns:$grid-template-columns;
+   grid-template-rows:$grid-template-rows; 
+   grid-column-gap: 5px;
+   grid-row-gap: $grid-row-gap;
+}
+
+body{
+  font-family:$font-family1;
+}
+/*Características del header, es bootstrap*/
+
+#margen{ 
+  background-color:gray; 
+ 
+}
+#margen nav img{
+  border:none;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;  
+  font-size: 25PX; 
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 20PX; 
+  border-bottom:1px solid $color-rosa; 
+}
+
+h3{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+  font-size: 18PX;
+  font-family: $font-family2;
+  color:black;
+  font-weight: bold;
+}
+
+p{
+  margin-bottom: 18px;
+  margin-top: 20px;
+  color:black;
+  font-family:$font-family2; 
+  font-size: 20px;
+}
+/*span{
+  text-align: center;
+  margin: 0 auto;
+  color:black;
+}*/
+
+article{
+	margin-bottom: 60px;
+	ul{
+		margin:40px;
+  		font-family:$font-family2;
+  		li{
+  			font-size:20px; 
+  			list-style: square;
+
+  		}
+	}
+}
+ 
+
+/*Grilla de la página principal*/
+.novedades{
+  	@include grilla(repeat(5,1fr),repeat(auto,auto),40px);	
+
+  	div img{
+  		width: 100%;
+  		height:100%;
+  		object-fit: cover;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      padding: 10px;
+      margin-bottom: 10px;       
+  		/*box-shadow: 0 0 5px 0 maroon;*/
+  		align-items: center;
+  		border:2px ridge pink;
+  		border-radius:20px 20px 20px 20px;
+      &:hover{
+        box-shadow: 0 4px 8px 0 maroon;
+      }
+  	}
+    
+
+ }
+ 
+ /* Galería de los diferentes PRoductos a la Venta*/
+
+.flexible{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  .tarjeta {
+  /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 10px;
+    margin: 5px;     
+    .contenedor{
+      h4{
+        font-size: 12px;
+        margin-top: 4px;
+      }
+      p{
+        font-size: 10px;
+      }     
+    }
+    
+    &:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+  }
+}
+
+
+/*Página Contactos*/
+
+/* FLEXBOX*/
+.donde{
+  display: flex;
+  flex-grow: row;
+  justify-content: space-around;
+  p{
+    font-size: 18px;
+    }
+  h2{
+    font-size: 20px;
+  } 
+
+  #estamos{
+  	margin-left:20px;      
+    img{
+      max-width: 100%;     
+  		padding: 20px;
+    }
+     
+  }
+
+}
+div .telefono{
+  img{
+    width: 26px;
+  }
+}
+
+
+
+/* Enlace listado de precio*/
+
+#lista{
+  display:flex;
+  justify-content: center;
+  align-items:center; 
+  color:$color-rosa;
+  
+}
+
+/*Pie de página*/
+
+footer{  
+    font-family: $font-family1;
+    padding-bottom: 20px;
+    font-size: 10px;
+    background-color:gray;
+    height: auto;
+    .bloque-body{
+    	max-width: 100%;
+  		display: flex;
+  		justify-content: center;
+ /*Primer bloque Información de las marcas de los productos*/
+  		.cln1{
+  			margin-left: 20px;
+  			margin-right: 50px;
+  			width: 33%;
+  			text-align: justify;
+
+  			h3{
+  				font-size: 12px;
+          font-weight: bold;
+  			}
+
+  			p{
+  				font-size: 10px;
+  			}
+
+  		}
+ /*Segundo bloque redes sociales*/
+
+  		.cln2{
+  			width: 33%;        
+
+  			h3{
+  				font-size: 12px;
+          font-weight: bold;
+  			}
+
+  			.fila{
+  				display: flex;
+  				margin-top: 10px; 
+          align-items:center;          
+
+  				img{
+  					width: 20px;  
+  					margin-right: 5px;
+  				}
+
+  				label{  					
+  					margin-left: 20px;            
+  				}
+
+  			}
+
+  		}
+ /* Tercer Bloque con otros Contactos*/
+
+  		.cln3{
+  			width: 33%;
+
+  			h3{
+  				font-size: 12px;
+          font-weight: bold;
+  			}
+
+  			.fila2{
+  				margin-top: 10px;
+  				display: flex;
+          align-items:center;
+
+  				img{
+  					width: 20px;
+  					margin-right: 5px;
+  				}
+
+  				label{  					
+  					margin-left: 20px;
+ 					  max-width: 140px;
+  				}
+
+  			}
+
+  		}
+
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* Variables*/
+/*elementos de la grilla utilizando MIXIN*/
+body {
+  font-family: "Roboto", sans-serif; }
+
+/*Características del header, es bootstrap*/
+#margen {
+  background-color: gray; }
+
+#margen nav img {
+  border: none; }
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 25PX; }
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 20PX;
+  border-bottom: 1px solid #b41d52; }
+
+h3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+  font-size: 18PX;
+  font-family: "Baloo Thambi 2", cursive;
+  color: black;
+  font-weight: bold; }
+
+p {
+  margin-bottom: 18px;
+  margin-top: 20px;
+  color: black;
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 20px; }
+
+/*span{
+  text-align: center;
+  margin: 0 auto;
+  color:black;
+}*/
+article {
+  margin-bottom: 60px; }
+  article ul {
+    margin: 40px;
+    font-family: "Baloo Thambi 2", cursive; }
+    article ul li {
+      font-size: 20px;
+      list-style: square; }
+
+/*Grilla de la página principal*/
+.novedades {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  grid-column-gap: 5px;
+  grid-row-gap: 40px; }
+  .novedades div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    margin-bottom: 10px;
+    /*box-shadow: 0 0 5px 0 maroon;*/
+    align-items: center;
+    border: 2px ridge pink;
+    border-radius: 20px 20px 20px 20px; }
+    .novedades div img:hover {
+      box-shadow: 0 4px 8px 0 maroon; }
+
+/* Galería de los diferentes PRoductos a la Venta*/
+.flexible {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .flexible .tarjeta {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    margin: 5px; }
+    .flexible .tarjeta .contenedor h4 {
+      font-size: 12px;
+      margin-top: 4px; }
+    .flexible .tarjeta .contenedor p {
+      font-size: 10px; }
+    .flexible .tarjeta:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+/*Página Contactos*/
+/* FLEXBOX*/
+.donde {
+  display: flex;
+  flex-grow: row;
+  justify-content: space-around; }
+  .donde p {
+    font-size: 18px; }
+  .donde h2 {
+    font-size: 20px; }
+  .donde #estamos {
+    margin-left: 20px; }
+    .donde #estamos img {
+      max-width: 100%;
+      padding: 20px; }
+
+div .telefono img {
+  width: 26px; }
+
+/* Enlace listado de precio*/
+#lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b41d52; }
+
+/*Pie de página*/
+footer {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+  font-size: 10px;
+  background-color: gray;
+  height: auto; }
+  footer .bloque-body {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    /*Primer bloque Información de las marcas de los productos*/
+    /*Segundo bloque redes sociales*/
+    /* Tercer Bloque con otros Contactos*/ }
+    footer .bloque-body .cln1 {
+      margin-left: 20px;
+      margin-right: 50px;
+      width: 33%;
+      text-align: justify; }
+      footer .bloque-body .cln1 h3 {
+        font-size: 12px;
+        font-weight: bold; }
+      footer .bloque-body .cln1 p {
+        font-size: 10px; }
+    footer .bloque-body .cln2 {
+      width: 33%; }
+      footer .bloque-body .cln2 h3 {
+        font-size: 12px;
+        font-weight: bold; }
+      footer .bloque-body .cln2 .fila {
+        display: flex;
+        margin-top: 10px;
+        align-items: center; }
+        footer .bloque-body .cln2 .fila img {
+          width: 20px;
+          margin-right: 5px; }
+        footer .bloque-body .cln2 .fila label {
+          margin-left: 20px; }
+    footer .bloque-body .cln3 {
+      width: 33%; }
+      footer .bloque-body .cln3 h3 {
+        font-size: 12px;
+        font-weight: bold; }
+      footer .bloque-body .cln3 .fila2 {
+        margin-top: 10px;
+        display: flex;
+        align-items: center; }
+        footer .bloque-body .cln3 .fila2 img {
+          width: 20px;
+          margin-right: 5px; }
+        footer .bloque-body .cln3 .fila2 label {
+          margin-left: 20px;
+          max-width: 140px; }
