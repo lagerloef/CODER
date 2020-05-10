@@ -14,16 +14,16 @@
     </head>
     <body>
         <header id="margen">            
-            <nav class="navbar navbar-expand-sm bg-secondary navbar-light navbar ">        
+            <nav class="navbar borde fixed-top navbar-expand-sm bg-white navbar-light">
           
             <!-- Brand -->
                 <a class="navbar-brand" href="index.html">
-                   <img src="imagen/logo.jpg" alt="Logo de la empresa Vicky Cosméticos" width="100">
+                   <img src="imagen/logo.png" alt="Logo de la empresa Vicky Cosméticos" width="100">
                 </a>
 
             <!-- Links -->
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="index.html">INICIO</a>
                     </li>
                     <!-- Dropdown -->
@@ -39,9 +39,17 @@
                         </div>
                     </li>
                     <!--Fin Dropdown -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="tintes_y_decolorantes.html">TINTES Y DECOLORANTES</a>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="maquillajes.html" id="navbardrop" data-toggle="dropdown">
+                        TINTES Y DECOLORANTES
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Tintes">TINTES</a>
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Decolorantes">DECOLORANTES</a>
+                        </div>
                     </li>
+                    <!--Fin Dropdown -->
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="cuidados_e_higiene.html" id="navbardrop" data-toggle="dropdown">
@@ -61,9 +69,9 @@
                 </ul>                               
             </nav>
         </header>
-        <main class="bloque" Id="INICIO" >
+        <main class="container bloque" Id="INICIO" >
             <!--Carousel¡--> 
-            <div id="carouselExampleCaptions" class="carousel slide container" data-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -73,22 +81,19 @@
                     <div class="carousel-item active ">
                         <img src="imagen/Banner_Dia_de_las_Madres.jpg" class="d-block w-100" alt="Banner Dia de las Madres.jpg">
                         <div class="carousel-caption d-none d-md-block"id="carousel_cambio">
-                            <h5>Especial Día de las Madres</h5>
-                            <p>Tienda de Cosméticos y productos de Higiene del cuidado personal al mayor y detal.</p>
+                            <h5>Tenemos el obsequio perfecto para el Día de las Madres</h5>    
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="imagen/Banner_Delivery.jpg" class="d-block w-100" alt="Banner_Delivery.jpg">
                         <div class="carousel-caption d-none d-md-block"id="carousel_cambio">
-                            <h5></h5>
-                            <p>Tienda de Cosméticos y productos de Higiene del cuidado personal al mayor y detal.</p>
+                            <h5>Entrega a Domicilio</h5>                            
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="imagen/Banner_Liquidacion_Alizzets.jpg" class="d-block w-100" alt="merengue.png">
                         <div class="carousel-caption d-none d-md-block"id="carousel_cambio">
-                            <h5>Liquidación Total productos Alizzets</h5>
-                            <p>Tienda de Cosméticos y productos de Higiene del cuidado personal al mayor y detal</p>
+                            <h5>Liquidación Total productos Alizzets</h5>                            
                         </div>
                     </div>                    
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -101,8 +106,9 @@
                     </a>
                 </div>
             </div>
-            <h1 class=container>Tienda Vicky Cosméticos</h1>
-            <div class="container novedades" id="separación">
+            <h1>Vicky Cosméticos</h1>
+            <P>Tienda de Cosméticos y productos de Higiene del cuidado personal al mayor y detal.</P>
+            <div class="novedades" id="separación">
                 <div>
                     <img src="imagen/VickyDelivery1.jpg" alt="imagen Vicky Delivery1.jpg" width="200px">
                 </div>

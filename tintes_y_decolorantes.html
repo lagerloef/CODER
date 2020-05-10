@@ -13,11 +13,11 @@
         <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header id="margen">            
-            <nav class="navbar navbar-expand-sm bg-secondary navbar-light">
+        <header id="margen">                  
+            <nav class="navbar borde fixed-top navbar-expand-sm navbar-light bg-white">
             <!-- Brand -->
                 <a class="navbar-brand" href="#">
-                    <img src="imagen/logo.jpg" alt="Logo de la empresa Vicky Cosméticos" width="100">
+                    <img src="imagen/Logo transparente.png" alt="Logo de la empresa Vicky Cosméticos" width="100">
                 </a>
 
             <!-- Links -->
@@ -38,9 +38,17 @@
                         </div>
                     </li>
                     <!--Fin Dropdown -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="tintes_y_decolorantes.html">TINTES Y DECOLORANTES</a>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="tintes_y_decolorantes.html" id="navbardrop" data-toggle="dropdown">
+                        TINTES Y DECOLORANTES
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Tintes">TINTES</a>
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Decolorantes">DECOLORANTES</a>
+                        </div>
                     </li>
+                    <!--Fin Dropdown -->
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="cuidados_e_higiene.html" id="navbardrop" data-toggle="dropdown">
@@ -61,7 +69,7 @@
             </nav>
         </header>
         <main class="container">
-        	<section>
+        	<section class= "bloque" id="Tintes">
                 <h1>Tintes y Decolorantes</h1>                  
                 <p>A continuación les ofrecemos variedades en tintes y decolorantes.</p>
         		<article>        			
@@ -133,7 +141,7 @@
                         </div> 
                     </div>
         		</article>
-                <article class="margen--bajo">
+                <article class="margen--bajo bloque" id="Decolorantes">
                     <h2>DECOLORANTES</h2>
                     <p>Ofrecemos los mejores productos de decolaracón del cabello.</p>                
                     <div class="flexible">

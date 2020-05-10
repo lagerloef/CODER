@@ -14,10 +14,10 @@
     </head>
     <body>
         <header id="margen">            
-            <nav class="navbar navbar-expand-sm bg-secondary navbar-light">
+            <nav class="navbar borde fixed-top navbar-expand-sm bg-white navbar-light">
             <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <img src="imagen/logo.jpg" alt="Logo de la empresa Vicky Cosméticos" width="100">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagen/logo.png" alt="Logo de la empresa Vicky Cosméticos" width="100">
                 </a>
 
             <!-- Links -->
@@ -38,9 +38,17 @@
                         </div>
                     </li>
                     <!--Fin Dropdown -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="tintes_y_decolorantes.html">TINTES Y DECOLORANTES</a>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="maquillajes.html" id="navbardrop" data-toggle="dropdown">
+                        TINTES Y DECOLORANTES
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Tintes">TINTES</a>
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Decolorantes">DECOLORANTES</a>
+                        </div>
                     </li>
+                    <!--Fin Dropdown -->
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="cuidados_e_higiene.html" id="navbardrop" data-toggle="dropdown">
@@ -54,14 +62,14 @@
                         </div>
                     </li>
                     <!--Fin Dropdown -->
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contactos.html">CONTACTOS</a>
                     </li>      
                 </ul>
             </nav>
         </header>
         <main class="container">
-        	<section>       
+        	<section class="bloque">       
                 <div class="donde">
                     <div id="estamos">         
                         <img src="imagen/Local.jpg" alt="local.png" title="Local" width="400"/>

@@ -14,10 +14,10 @@
     </head>
     <body>
         <header id="margen">            
-            <nav class="navbar navbar-expand-sm bg-secondary navbar-light">
+            <nav class="navbar borde fixed-top navbar-expand-sm bg-white navbar-light">
             <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <img src="imagen/logo.jpg" alt="Logo de la empresa Vicky Cosméticos" width="100">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagen/Logo transparente.png" alt="Logo de la empresa Vicky Cosméticos" width="100">
                 </a>
 
             <!-- Links -->
@@ -26,21 +26,29 @@
                         <a class="nav-link" href="index.html">INICIO</a>
                     </li>
                     <!-- Dropdown -->
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="maquillajes.html" id="navbardrop" data-toggle="dropdown">
                         MAQUILLAJES
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="maquillajes.html">ROSTRO</a>
+                            <a class="dropdown-item" href="maquillajes.html#rostro">ROSTRO</a>
                             <a class="dropdown-item" href="maquillajes.html#ojos">OJOS</a>
                             <a class="dropdown-item" href="maquillajes.html#labios">LABIOS</a>
                             <a class="dropdown-item" href="maquillajes.html#uñas">UÑAS</a>
                         </div>
                     </li>
                     <!--Fin Dropdown -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="tintes_y_decolorantes.html">TINTES Y DECOLORANTES</a>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="maquillajes.html" id="navbardrop" data-toggle="dropdown">
+                        TINTES Y DECOLORANTES
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Tintes">TINTES</a>
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Decolorantes">DECOLORANTES</a>
+                        </div>
                     </li>
+                    <!--Fin Dropdown -->
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="cuidados_e_higiene.html" id="navbardrop" data-toggle="dropdown">
@@ -60,10 +68,10 @@
                 </ul>
             </nav>
         </header>
-        <main class="container">
-        	<section>
+        <main class="container" id="rostro">
+        	<section class="bloque">
                 <h1>Maquillajes</h1>                
-                <article id="rostro">
+                <article>
         			<h2 class="productos">ROSTRO:</h2>
                     <p>Productos ideales para tu rostro y luce un look de maquillaje impecable.</p>             
                     <div class="flexible">                        
@@ -133,7 +141,7 @@
                         </div>
                     </div>                                    
         		</article>
-                <article id="ojos">
+                <article id="ojos" class="bloque">
                     <h2 class="productos">OJOS</h2>
                     <p>Te ofrecemos variedades de sombras, delineadores, lápices y máscaras.</p>  
                     <div class="flexible">
@@ -219,7 +227,7 @@
                         </div>
                     </div>              
                 </article>
-                <article id="labios">
+                <article id="labios" class="bloque">
                     <h2 class="productos">LABIOS</h2>
                     <p>Nuestros labiales son perfectos para ti.
                     </p> 
@@ -234,7 +242,7 @@
                         </div> 
                     </div>
                 </article>
-                <article id="uñas" class="margen--bajo">
+                <article id="uñas" class="margen--bajo bloque">
                     <h2 class="productos">UÑAS</h2>
                     <p>El maquillaje de uñas no es menos importante , por eso ofrecemos bellos esmaltes.</p>  
                     <div class="flexible">                        
@@ -250,7 +258,7 @@
                 </article>
         	</section>
         </main>
-        <footer class="bg-secondary"> 
+        <footer class=bg-secundary> 
             <div class="bloque-body">           
                 <div class="cln1">
                     <h3>Nuestros producto son de las marcas:</h3>

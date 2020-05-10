@@ -17,12 +17,19 @@ body{
 }
 /*Características del header, es bootstrap*/
 
-#margen{ 
-  background-color:gray; 
- 
+
+.borde{ 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-bottom: 15px;   
+ }
+
+.bloque{
+  padding-top:90px;
 }
-#margen nav img{
-  border:none;
+
+.article{
+  padding-top:120px;
 }
 
 h1 {
@@ -43,16 +50,19 @@ h3{
   margin-top: 20px;
   color: white;
   font-size: 18PX;
-  font-family: $font-family2;
+  font-family: $font-family1;
   color:black;
   font-weight: bold;
 }
 
+h4{
+  font-family: $font-family1;
+}
 p{
   margin-bottom: 18px;
   margin-top: 20px;
   color:black;
-  font-family:$font-family2; 
+  font-family:$font-family1; 
   font-size: 20px;
 }
 /*span{
@@ -86,13 +96,11 @@ article{
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
       padding: 10px;
-      margin-bottom: 10px;       
-  		/*box-shadow: 0 0 5px 0 maroon;*/
+      margin-bottom: 10px; 
   		align-items: center;
-  		border:2px ridge pink;
-  		border-radius:20px 20px 20px 20px;
+  		border-radius:10px 10px 10px 10px;
       &:hover{
-        box-shadow: 0 4px 8px 0 maroon;
+       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
       }
   	}
     
@@ -118,6 +126,7 @@ article{
       }
       p{
         font-size: 10px;
+        font-family: $font-family2;
       }     
     }
     
@@ -175,7 +184,7 @@ div .telefono{
 footer{  
     font-family: $font-family1;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 12px;
     background-color:gray;
     height: auto;
     .bloque-body{
@@ -190,13 +199,14 @@ footer{
   			text-align: justify;
 
   			h3{
-  				font-size: 12px;
+  				font-size: 14px;
           font-weight: bold;
   			}
 
-  			p{
-  				font-size: 10px;
-  			}
+        p{
+          font-size: 12px;
+          font-family: $font-family2;
+        }  			
 
   		}
  /*Segundo bloque redes sociales*/
@@ -205,13 +215,13 @@ footer{
   			width: 33%;        
 
   			h3{
-  				font-size: 12px;
+  				font-size: 14px;
           font-weight: bold;
   			}
 
   			.fila{
   				display: flex;
-  				margin-top: 10px; 
+  				margin-top: 12px; 
           align-items:center;          
 
   				img{
@@ -232,12 +242,12 @@ footer{
   			width: 33%;
 
   			h3{
-  				font-size: 12px;
+  				font-size: 14px;
           font-weight: bold;
   			}
 
   			.fila2{
-  				margin-top: 10px;
+  				margin-top: 12px;
   				display: flex;
           align-items:center;
 

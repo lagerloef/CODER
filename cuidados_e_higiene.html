@@ -14,10 +14,10 @@
     </head>
     <body>
         <header id="margen">            
-            <nav class="navbar navbar-expand-sm bg-secondary navbar-light">
+            <nav class="borde navbar fixed-top navbar-expand-sm navbar-light bg-white">
             <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <img src="imagen/logo.jpg" alt="Logo de la empresa Vicky Cosméticos" width="100">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagen/logo.png" alt="Logo de la empresa Vicky Cosméticos" width="100">
                 </a>
 
             <!-- Links -->
@@ -38,18 +38,26 @@
                         </div>
                     </li>
                     <!--Fin Dropdown -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="tintes_y_decolorantes.html">TINTES Y DECOLORANTES</a>
-                    </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="maquillajes.html" id="navbardrop" data-toggle="dropdown">
+                        TINTES Y DECOLORANTES
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Tintes">TINTES</a>
+                            <a class="dropdown-item" href="tintes_y_decolorantes.html#Decolorantes">DECOLORANTES</a>
+                        </div>
+                    </li>
+                    <!--Fin Dropdown -->
+                    <!-- Dropdown -->
+                    <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="cuidados_e_higiene.html" id="navbardrop" data-toggle="dropdown">
                         CUIDADOS E HIGIENE
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="cuidados_e_higiene.html#CuidadoCapilar">CUIDADO CAPILAR</a>
-                            <a class="dropdown-item" href="cuidados_e_higiene.html#HigieneCorporal">HIGIENE CORPORAL</a>
-                            <a class="dropdown-item" href="cuidados_e_higiene.html#PerfumesDesodorantes">PERFUMES Y DESODORANTES</a>
+                            <a class="dropdown-item" href="cuidados_e_higiene.html#cuidadoCapilar">CUIDADO CAPILAR</a>
+                            <a class="dropdown-item" href="#HigieneCorporal">HIGIENE CORPORAL</a>
+                            <a class="dropdown-item" href="#PerfumesDesodorantes">PERFUMES Y DESODORANTES</a>
                             <a class="dropdown-item" href="infantil.html">INFANTIL</a>
                         </div>
                     </li>
@@ -61,9 +69,9 @@
             </nav>
         </header>
         <main class="container">
-        	<section>        		
+        	<section class="bloque" id="cuidadoCapilar">       		
         		<h1>Productos para el Cuidado e Higiene</h1>
-                <article id="cuidadoCapilar">
+                <article >
                     <h2>CUIDADO CAPILAR</h2>
                     <p>La siguiente linea de productos son para el cuidado e higiene capilar. </p>
                     <div class="flexible">
@@ -140,8 +148,8 @@
                             </div>
                          </div>                         
                     </div>                  
-                </article>
-                <article id="HigieneCorporal">
+                </article> 
+                <article id="HigieneCorporal" class="bloque">
                     <h2> HIGIENE E HIDRATACIÓN CORPORAL</h2>
                     <p>Tenemos los mejores productos para la higiene personal.</p>
                     <div class="flexible">
@@ -186,8 +194,8 @@
                             </div>
                          </div>
                     </div>
-                </article>
-                <article id="PerfumesDesodorantes">  
+                </article>            
+                <article id="PerfumesDesodorantes" class="bloque">  
                     <h2>PERFUMES Y DESODORANTES</h2>
                     <p>Ofrecemos las Mejores marcas en Colonias y Desodorantes.</p>
                     <div class="flexible">
@@ -259,7 +267,7 @@
                 </article >                   
         	</section>
         </main>
-        <footer> 
+        <footer class="bg-secondary"> 
             <div class="bloque-body">           
                 <div class="cln1">
                     <h3>Nuestros producto son de las marcas:</h3>
@@ -302,7 +310,7 @@
                     </div> 
                 </div>
             </div>
-        </footer class="bg-secondary">
+        </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
