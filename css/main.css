@@ -13,6 +13,9 @@ body {
 .bloque {
   padding-top: 90px; }
 
+.subrayado {
+  border-bottom: 2px solid #b41d52; }
+
 .article {
   padding-top: 120px; }
 
