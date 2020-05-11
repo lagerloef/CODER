@@ -27,7 +27,9 @@ body{
 .bloque{
   padding-top:90px;
 }
-
+.subrayado{
+  border:1px solid $color-rosa;
+}
 .article{
   padding-top:120px;
 }
@@ -58,6 +60,7 @@ h3{
 h4{
   font-family: $font-family1;
 }
+
 p{
   margin-bottom: 18px;
   margin-top: 20px;
@@ -126,7 +129,7 @@ article{
       }
       p{
         font-size: 10px;
-        font-family: $font-family2;
+        font-family: $font-family2;        
       }     
     }
     
